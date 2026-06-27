@@ -1,18 +1,18 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     void Start()
     {
-        Enemy agumon = new Enemy("Agumon", EvolutionStages.Rookie, 450, 120, 80, 70, 65, 90);
+        EnemyDataBase database = new EnemyDataBase();
 
-        agumon.Evaluate();  //Evaluamos al digimon
+        List<Enemy> champions =
+            database.GetEnemiesByStage(EvolutionStages.Champion);
 
-        //Mensajes de debug
-        Debug.Log("Nombre: " + agumon.DigimonName);
-        Debug.Log("Power Score: " + agumon.powerScore);
-        Debug.Log("Fitness: " + agumon.fitness);
-        Debug.Log("EXP: " + agumon.EXP);
-        Debug.Log("YEN: " + agumon.YEN);
+        GeneticAlgorithm ga =
+            new GeneticAlgorithm(champions);
+
+        ga.Run();
     }
 }
