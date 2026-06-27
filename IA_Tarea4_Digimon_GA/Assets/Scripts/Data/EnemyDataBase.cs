@@ -18,7 +18,10 @@ public class EnemyDataBase
         enemies.Add(new Enemy("Gabumon", EvolutionStages.Rookie, 430, 140, 75, 80, 70, 85));
         enemies.Add(new Enemy("Tentomon", EvolutionStages.Rookie, 420, 150, 70, 75, 95, 80));
         enemies.Add(new Enemy("Palmon", EvolutionStages.Rookie, 440, 145, 68, 72, 90, 82));
-
+        enemies.Add(new Enemy("Impmon", EvolutionStages.Rookie, 350, 140, 10, 20, 85, 94));
+        enemies.Add(new Enemy("Patamon", EvolutionStages.Rookie, 530, 40, 85, 40, 60, 85));
+        enemies.Add(new Enemy("Gaomon", EvolutionStages.Rookie, 620, 180, 76, 95, 95, 70));
+        enemies.Add(new Enemy("Betamon", EvolutionStages.Rookie, 490, 170, 69, 69, 69, 96));
 
 
         // Champion
