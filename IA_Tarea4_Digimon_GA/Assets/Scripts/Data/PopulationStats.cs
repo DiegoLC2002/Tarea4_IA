@@ -14,7 +14,7 @@ public class PopulationStats
     public PopulationStats(List<Enemy> population)
     {
         CalculateMaximums(population);
-        Debug.Log($"HP:{MaxHP}  SP:{MaxSP}  ATK:{MaxATK}  DEF:{MaxDEF}  INT:{MaxINT}  SPD:{MaxSPD}");
+        //Debug.Log($"HP:{MaxHP}  SP:{MaxSP}  ATK:{MaxATK}  DEF:{MaxDEF}  INT:{MaxINT}  SPD:{MaxSPD}");
     }
 
     private void CalculateMaximums(List<Enemy> population)

@@ -14,21 +14,32 @@ public class EnemyDataBase
     private void InitializeDataBase()
     {
         // Rookie
-        enemies.Add(new Enemy("Agumon", EvolutionStages.Rookie, 450, 120, 80, 70, 65, 90));
-        enemies.Add(new Enemy("Gabumon", EvolutionStages.Rookie, 430, 140, 75, 80, 70, 85));
-        enemies.Add(new Enemy("Tentomon", EvolutionStages.Rookie, 420, 150, 70, 75, 95, 80));
-        enemies.Add(new Enemy("Palmon", EvolutionStages.Rookie, 440, 145, 68, 72, 90, 82));
-        enemies.Add(new Enemy("Impmon", EvolutionStages.Rookie, 350, 140, 10, 20, 85, 94));
-        enemies.Add(new Enemy("Patamon", EvolutionStages.Rookie, 530, 40, 85, 40, 60, 85));
-        enemies.Add(new Enemy("Gaomon", EvolutionStages.Rookie, 620, 180, 76, 95, 95, 70));
-        enemies.Add(new Enemy("Betamon", EvolutionStages.Rookie, 490, 170, 69, 69, 69, 96));
+        enemies.Add(new Enemy("Agumon", EvolutionStages.Rookie, 450, 20, 68, 15, 45, 37));
+        enemies.Add(new Enemy("Armadillomon", EvolutionStages.Rookie, 530, 32, 23, 21, 48, 33));
+        enemies.Add(new Enemy("Impmon", EvolutionStages.Rookie, 140, 51, 44, 51, 21, 44));
+        enemies.Add(new Enemy("Gaomon", EvolutionStages.Rookie, 450, 25, 55, 27, 30, 43));
+        enemies.Add(new Enemy("Gazimon", EvolutionStages.Rookie, 390, 27, 60, 20, 20, 44));
+        enemies.Add(new Enemy("Gabumon", EvolutionStages.Rookie, 450, 35, 45, 30, 32, 38));
+        enemies.Add(new Enemy("Guilmon", EvolutionStages.Rookie, 470, 25, 70, 15, 30, 43));
+        enemies.Add(new Enemy("Salamon", EvolutionStages.Rookie, 150, 55, 20, 56, 25, 39));
+        enemies.Add(new Enemy("Lunamon", EvolutionStages.Rookie, 260, 50, 36, 52, 23, 38));
+        enemies.Add(new Enemy("Elecmon", EvolutionStages.Rookie, 400, 40, 33, 30, 30, 37));
+
 
 
         // Champion
-        enemies.Add(new Enemy("Greymon", EvolutionStages.Champion, 900, 180, 145, 120, 90, 110));
-        enemies.Add(new Enemy("Garurumon", EvolutionStages.Champion, 820, 210, 130, 115, 95, 140));
-        enemies.Add(new Enemy("Kabuterimon", EvolutionStages.Champion, 880, 220, 125, 130, 120, 95));
-        enemies.Add(new Enemy("Togemon", EvolutionStages.Champion, 910, 170, 135, 125, 90, 100));
+        enemies.Add(new Enemy("Greymon", EvolutionStages.Champion, 650, 35, 85, 25, 60, 55));
+        enemies.Add(new Enemy("Garurumon", EvolutionStages.Champion, 450, 55, 50, 45, 45, 75));
+        enemies.Add(new Enemy("Kabuterimon", EvolutionStages.Champion, 400, 40, 55, 63, 65, 42));
+        enemies.Add(new Enemy("Togemon", EvolutionStages.Champion, 700, 40, 55, 44, 60, 46));
+        enemies.Add(new Enemy("IceDevimon", EvolutionStages.Champion, 500, 45, 82, 60, 45, 43));
+        enemies.Add(new Enemy("Agunimon", EvolutionStages.Champion, 600, 35, 85, 35, 44, 66));
+        enemies.Add(new Enemy("Kyubimon", EvolutionStages.Champion, 350, 75, 20, 75, 40, 70));
+        enemies.Add(new Enemy("Seadramon", EvolutionStages.Champion, 550, 60, 25, 71, 50, 44));
+        enemies.Add(new Enemy("Togemon", EvolutionStages.Champion, 700, 40, 55, 44, 60, 46));
+        enemies.Add(new Enemy("Sistermon Ciel", EvolutionStages.Champion, 400, 58, 47, 46, 38, 76));
+
+
 
         // Ultimate
         enemies.Add(new Enemy("MetalGreymon", EvolutionStages.Ultimate, 1500, 260, 220, 180, 140, 150));

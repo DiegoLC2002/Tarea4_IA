@@ -8,13 +8,13 @@ public class Enemy
     public EvolutionStages Stage;
 
     //Genes
-    public int HP;
-    public int SP;
+    public int HP { get; set; }
+    public int SP { get; set; }
 
-    public int ATK;
-    public int DEF;
-    public int INT;
-    public int SPD;
+    public int ATK { get; set; }
+    public int DEF { get; set; }
+    public int INT { get; set; }
+    public int SPD { get; set; }
 
     //Valores derivados
     public float powerScore;
@@ -33,7 +33,7 @@ public class Enemy
 
 
 
-    public Enemy(string name, EvolutionStages stage, int hp, int sp, int atk, int def, int intel, int spd)
+    public Enemy(string name, EvolutionStages stage, int hp, int sp, int atk, int intel, int def, int spd)
     {
         DigimonName = name;
         Stage = stage;
@@ -42,8 +42,8 @@ public class Enemy
         SP = sp;
 
         ATK = atk;
-        DEF = def;
         INT = intel;
+        DEF = def;
         SPD = spd;
     }
 
@@ -73,11 +73,10 @@ public class Enemy
     }
 
     //Calcular Fitness
-    public void calculateFitness()
+    public void calculateFitness(float targetPower)
     {
-        float expectedPower = calculateExpectedPower();
-
-        fitness = 1 - Mathf.Abs(expectedPower - powerScore);    //usa valor absoluto
+        fitness = 1 - Mathf.Abs(targetPower - powerScore);    //usa valor absoluto
+        fitness = Mathf.Clamp01(fitness);
     }
 
     //Calcular las recompensas
@@ -89,14 +88,25 @@ public class Enemy
     }
 
     //Metodo para llamar a todas las funcuones a la vez
-    public void Evaluate(PopulationStats stats)
+    public void Evaluate(PopulationStats stats, float targetPower)
     {
         NormalizeStats(stats);
         calculatePowerScore();
-        calculateFitness();
+        calculateFitness(targetPower);
         calculateRewards();
     }
 
+    public Enemy Clone()
+    {
+        Enemy copy = new Enemy(DigimonName, Stage, HP, SP, ATK, INT, DEF, SPD);
 
+        copy.powerScore = powerScore;
+        copy.fitness = fitness;
+        copy.EXP = EXP;
+        copy.YEN = YEN;
+
+        return copy;
+    }
 
 }
+
