@@ -48,15 +48,15 @@ public class Enemy
     }
 
     //Metodo para normalizar estadisticas
-    public void NormalizeStats()
+    public void NormalizeStats(PopulationStats stats)
     {
-        normalizedHP = HP / StatsLimits.MaxHP;
-        normalizedSP = SP / StatsLimits.MaxSP;
+        normalizedHP = HP / stats.MaxHP;
+        normalizedSP = SP / stats.MaxSP;
 
-        normalizedATK = ATK / StatsLimits.MaxATK;
-        normalizedDEF = DEF / StatsLimits.MaxDEF;
-        normalizedINT = INT / StatsLimits.MaxINT;
-        normalizedSPD = SPD / StatsLimits.MaxSPD;
+        normalizedATK = ATK / stats.MaxATK;
+        normalizedDEF = DEF / stats.MaxDEF;
+        normalizedINT = INT / stats.MaxINT;
+        normalizedSPD = SPD / stats.MaxSPD;
 
     }
 
@@ -89,9 +89,9 @@ public class Enemy
     }
 
     //Metodo para llamar a todas las funcuones a la vez
-    public void Evaluate()
+    public void Evaluate(PopulationStats stats)
     {
-        NormalizeStats();
+        NormalizeStats(stats);
         calculatePowerScore();
         calculateFitness();
         calculateRewards();

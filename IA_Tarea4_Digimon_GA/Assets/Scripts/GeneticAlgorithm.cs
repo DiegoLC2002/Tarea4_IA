@@ -18,9 +18,11 @@ public class GeneticAlgorithm
     //Evaluar todos los integrantes de la poblacion
     private void EvaluatePopulation()
     {
+        PopulationStats stats = new PopulationStats(population);
+
         foreach (Enemy enemy in population)
         {
-            enemy.Evaluate();
+            enemy.Evaluate(stats);
         }
     }
 
