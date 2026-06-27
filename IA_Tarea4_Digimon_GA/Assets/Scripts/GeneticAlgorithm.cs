@@ -11,7 +11,7 @@ public class GeneticAlgorithm
 
     private int generatedCounter = 1;
     private PopulationStats stats;
-    private float targetPower = 0.70f;
+    private float targetPower = 0.80f;
 
     public GeneticAlgorithm(List<Enemy> initialPopulation)
     {
@@ -75,6 +75,8 @@ public class GeneticAlgorithm
         Debug.Log("Nombre: " + population[0].DigimonName);
         Debug.Log("Fitness: " + population[0].fitness);
         Debug.Log("PowerScore: " + population[0].powerScore);
+        Debug.Log("EXP: " + population[0].EXP);
+        Debug.Log("YEN: " + population[0].YEN);
 
     }
 

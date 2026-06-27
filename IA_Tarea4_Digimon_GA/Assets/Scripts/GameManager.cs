@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     {
         EnemyDataBase database = new EnemyDataBase();
 
-        List<Enemy> enemiesByStage = database.GetEnemiesByStage(EvolutionStages.Rookie);
+        List<Enemy> enemiesByStage = database.GetEnemiesByStage(EvolutionStages.Ultimate);
 
         GeneticAlgorithm ga = new GeneticAlgorithm(enemiesByStage);
 

@@ -42,12 +42,19 @@ public class EnemyDataBase
 
 
         // Ultimate
-        enemies.Add(new Enemy("MetalGreymon", EvolutionStages.Ultimate, 1500, 260, 220, 180, 140, 150));
-        enemies.Add(new Enemy("WereGarurumon", EvolutionStages.Ultimate, 1400, 280, 210, 170, 150, 180));
+        enemies.Add(new Enemy("MetalGreymon", EvolutionStages.Ultimate, 950, 45, 105, 41, 90, 64));
+        enemies.Add(new Enemy("WereGarurumon", EvolutionStages.Ultimate, 850, 45, 115, 40, 45, 95));
+        enemies.Add(new Enemy("Angewomon", EvolutionStages.Ultimate, 500, 100, 30, 125, 50, 85));
+        enemies.Add(new Enemy("LadyDevimon", EvolutionStages.Ultimate, 500, 100, 60, 95, 50, 85));
+        enemies.Add(new Enemy("Dragomon", EvolutionStages.Ultimate, 700, 76, 63, 98, 53, 50));
+        enemies.Add(new Enemy("SkullMeramon", EvolutionStages.Ultimate, 950, 40, 120, 31, 75, 64));
+        enemies.Add(new Enemy("Duramon", EvolutionStages.Ultimate, 880, 42, 112, 40, 88, 70));
+        enemies.Add(new Enemy("Paildramon", EvolutionStages.Ultimate, 750, 80, 90, 60, 75, 75));
+        enemies.Add(new Enemy("MagnaAngemon", EvolutionStages.Ultimate, 650, 85, 59, 100, 70, 61));
+        enemies.Add(new Enemy("Lilamon", EvolutionStages.Ultimate, 750, 90, 30, 105, 55, 70));
 
         // Mega
         enemies.Add(new Enemy("WarGreymon", EvolutionStages.Mega, 2300, 350, 320, 270, 220, 240));
-
         enemies.Add(new Enemy("MetalGarurumon", EvolutionStages.Mega, 2200, 380, 300, 250, 240, 250));
     }
 
