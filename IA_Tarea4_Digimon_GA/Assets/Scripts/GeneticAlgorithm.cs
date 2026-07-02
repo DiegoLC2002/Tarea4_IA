@@ -11,7 +11,7 @@ public class GeneticAlgorithm
 
     private int generatedCounter = 1;
     private PopulationStats stats;
-    private float targetPower = 0.80f;
+    private float targetPower = 0.40f;
 
     public GeneticAlgorithm(List<Enemy> initialPopulation)
     {
